@@ -13,7 +13,7 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
     CA = CA_util_class.CA_instance(args)<br>
 
 2. argument of constructor of CA_util_class is a command line options (i.e. argparse, ref to "https://docs.python.org/zh-tw/3/library/argparse.html#module-argparse" for detail)
-    -v version number<br>
+    '-v version number<br>
     -f filename <br>
     specify file name of JSON file which store username, passsword and other key settings of CA users<br>
     -10p <br>
@@ -29,7 +29,7 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
     -g guildname<br>
     specify guild name to perform actions<br>
     -sqd squad_number<br>
-    specify squad_number to perform actions<br>
+    specify squad_number to perform actions<br>'
 
 3. CA.py - main function of CA project. You can start automation by executing CA.py as below.<br>
     python CA.py -DC -CD<br>
