@@ -10,41 +10,9 @@ Castle age home page
 ***
 ### HOW TO START
 1. Install Python and clone this git
-2. CA.py 
-    main function of CA project. You can start automation by executing CA.py as below.<br>
-        ```
-        python CA.py -DC -CD
-        python CA.py -g Fu -sqd 1 -sqd 2 -10p
-        ```
-3. Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation
-    for example: <br>
-        ```
-        from CA_util import CA_util_class
-
-        CA = CA_util_class.CA_instance(args)
-        CA.do_CA_actions()
-        del CA
-        ```
-4. argument of constructor of CA_util_class is a command line options (i.e. argparse, ref to "https://docs.python.org/zh-tw/3/library/argparse.html#module-argparse" for detail)<br>
-    `-v version number`<br>
-        show version number<br>
-    `-f filename`<br>
-        specify file name of JSON file which store username, passsword and other key settings of CA users<br>
-    `-10p` <br>
-    collect 10p battle rewards<br>
-    `-100p` <br>
-    collect 100p battle rewards<br>
-    `-CGB` <br>
-    collect Classical GB rewards<br>
-    `-DC` <br>
-    daily click. includes Enable, Bless, Resource, Crystal    <br>
-    `-CD`<br>
-    conquest duel. perform conquest duel based on "target_id_list.json"<br>
-    `-g guildname`<br>
-    specify guild name to perform actions<br>
-    `-sqd squad_number`<br>
-    specify squad_number to perform actions<br>
-5. Update "CA_accounts_full.json" before start<br>
+    - Python: <https://www.python.org/downloads/>
+    - GitHub: <https://github.com/dockchen/CA>
+2. Update "CA_accounts_full.json" before start<br>
     - CA_accounts_full.json
         This JSON file stores all CA account information for automation. mandatory fields needed should be,<br>
         `NO`: serial number<br>
@@ -101,7 +69,7 @@ Castle age home page
             }
         ]
     ```
-6. Update "target_id_list.json" before start<br>
+3. Update "target_id_list.json" before start<br>
     target_id_list.json is a list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
         ```
             [
@@ -111,4 +79,64 @@ Castle age home page
                 "min_bsi": 0
                 }
             ]
+        ```
+4. Start CA automation
+    - CA.py: main function of CA project. You can start automation by executing CA.py as below.<br>
+        ```
+        python CA.py -DC -CD
+        python CA.py -g Fu -sqd 1 -sqd 2 -10p
+        ```
+        ```
+        usage: ca.py [-h] [-v] [-f FILENAME] [-10p] [-100p] [-CGB] [-DC]
+             [-b {0,1,2,3,4,5}] [-CD] [-g {Any,YoPing,Fu,Lu}]
+             [-sqd {1,2,3,4,5,6,7,8,9,10}]
+
+        Castle Age Automation
+
+        optional arguments:
+          -h, --help            show this help message and exit
+          -v, --version         show program's version number and exit
+          -f FILENAME, --filename FILENAME
+          -10p, --Reward_10P    Collect 10P battle reward
+          -100p, --Reward_100P  Collect 100P battle reward
+          -CGB, --Reward_CGB    Collect Classical GB reward
+          -DC, --DailyClick     Daily clicks - Enable, Bless, Resource, Crystal...
+          -b {0,1,2,3,4,5}, --Blessing {0,1,2,3,4,5}
+                                Blessing - 0: profile; 1:Eng; 2:Atk; 3:Def; 4:Health;
+                                5:STA
+          -CD, --ConquestDuel   Auto Conquest Duel
+          -g {Any,YoPing,Fu,Lu}, --Guild {Any,YoPing,Fu,Lu}
+                                Specify guild to do actions
+          -sqd {1,2,3,4,5,6,7,8,9,10}, --Squad {1,2,3,4,5,6,7,8,9,10}
+                                Specify squads to do actions
+        ```
+5. Arguments available for CA.py
+    `-v`<br>
+        show version number<br>
+    `-f filename`<br>
+        (optional) specify file name of JSON file which store username, passsword and other key settings of CA users<br>
+        default file name is CA_accounts_full.json
+    `-10p` <br>
+        (optional) collect 10p battle rewards<br>
+    `-100p` <br>
+        (optional) collect 100p battle rewards<br>
+    `-CGB` <br>
+        (optional) collect Classical GB rewards<br>
+    `-DC` <br>
+        (optional) daily click. includes Enable, Bless, Resource, Crystal    <br>
+    `-CD`<br>
+        (optional) conquest duel. perform conquest duel based on "target_id_list.json"<br>
+    `-g guildname`<br>
+        (optional) specify guild name to perform actions<br>
+    `-sqd squad_number`<br>
+        (optional) specify squad_number to perform actions<br>
+6. Create your own function
+    Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation
+    for example: <br>
+        ```
+        from CA_util import CA_util_class
+
+        CA = CA_util_class.CA_instance(args)
+        CA.do_CA_actions()
+        del CA
         ```
