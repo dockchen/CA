@@ -67,7 +67,7 @@ Castle age home page
                 "Owner": null
             }
         ]
-    ```
+        ```
 3. Update "target_id_list.json" before start<br>
     target_id_list.json is a list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
     ```
@@ -81,10 +81,10 @@ Castle age home page
     ```
 4. Start CA automation
     - CA.py: main function of CA project. You can start automation by executing CA.py as below.<br>
-        ```
-        python CA.py -DC -CD
-        python CA.py -g Fu -sqd 1 -sqd 2 -10p
-        ```
+    ```
+    python CA.py -DC -CD
+    python CA.py -g Fu -sqd 1 -sqd 2 -10p
+    ```
         <BR>
         ```
         usage: ca.py [-h] [-v] [-f FILENAME] [-10p] [-100p] [-CGB] [-DC]
@@ -131,7 +131,7 @@ Castle age home page
     `-sqd squad_number`<br>
         (optional) specify squad_number to perform actions<br>
 6. Create your own function
-    Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation
+    Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation<br>
     for example: <br>
         ```
         from CA_util import CA_util_class
