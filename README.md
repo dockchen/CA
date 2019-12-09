@@ -65,6 +65,45 @@ Castle age home page
     `Reward_100P`: Collect 100p rewards or not. 0: No, 1: Yes<br>
     `Reward_10P`: Collect 10p rewards or not. 0: No, 1: Yes<br>
     `Reward_CGB`: Collect classical Guild Battle rewards or not. 0: No, 1: Yes<br>
+    ```
+[
+    {
+        "NO": 63,
+        "Guild": "GuildName",
+        "Name": "UserName",
+        "Email": "CA login email",
+        "PWD": "CA login password",
+        "Class": "Mage",
+        "Squad": 0,
+        "Def_Loadout": 5,
+        "Conquest_Duel": 0,
+        "Collect_Conquest": 0,
+        "PvP_Loadout": 6,
+        "DailyClick": 1,
+        "Blessing": 2,
+        "Campaign": "easy",
+        "Reward_100P": 0,
+        "Reward_CGB": 0,
+        "Reward_10P": 0,
+        "Army code": "123456",
+        "BSI": 310.2,
+        "eng": 341,
+        "eng_bonus": 0,
+        "sta": 389,
+        "sta_bonus": 0,
+        "atk": 266,
+        "atk_bonus": 26,
+        "def": 21,
+        "def_bonus": 5,
+        "health": 102,
+        "health_bonus": 0,
+        "army": 283,
+        "Comment": null,
+        "Owner": null
+    }
+]
+
+    ```
     - target_id_list.json
     list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
     ```
