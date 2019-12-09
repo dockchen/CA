@@ -108,27 +108,7 @@ Castle age home page
                                 Specify guild to do actions
           -sqd {1,2,3,4,5,6,7,8,9,10}, --Squad {1,2,3,4,5,6,7,8,9,10}
                                 Specify squads to do actions
-5. Arguments available for CA.py<br>
-    `-v`<br>
-        show version number<br>
-    `-f filename`<br>
-        (optional) specify file name of JSON file which store username, passsword and other key settings of CA users<br>
-        default file name is CA_accounts_full.json
-    `-10p` <br>
-        (optional) collect 10p battle rewards<br>
-    `-100p` <br>
-        (optional) collect 100p battle rewards<br>
-    `-CGB` <br>
-        (optional) collect Classical GB rewards<br>
-    `-DC` <br>
-        (optional) daily click. includes Enable, Bless, Resource, Crystal    <br>
-    `-CD`<br>
-        (optional) conquest duel. perform conquest duel based on "target_id_list.json"<br>
-    `-g guildname`<br>
-        (optional) specify guild name to perform actions<br>
-    `-sqd squad_number`<br>
-        (optional) specify squad_number to perform actions<br>
-6. Create your own function<br>
+5. Create your own function<br>
     Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation<br>
     for example: <br>
     ```
