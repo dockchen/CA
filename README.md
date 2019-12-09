@@ -86,7 +86,6 @@ Castle age home page
     python CA.py -g Fu -sqd 1 -sqd 2 -10p
     ```
 
-        ```
         usage: ca.py [-h] [-v] [-f FILENAME] [-10p] [-100p] [-CGB] [-DC]
              [-b {0,1,2,3,4,5}] [-CD] [-g {Any,YoPing,Fu,Lu}]
              [-sqd {1,2,3,4,5,6,7,8,9,10}]
@@ -109,7 +108,6 @@ Castle age home page
                                 Specify guild to do actions
           -sqd {1,2,3,4,5,6,7,8,9,10}, --Squad {1,2,3,4,5,6,7,8,9,10}
                                 Specify squads to do actions
-        ```
 5. Arguments available for CA.py<br>
     `-v`<br>
         show version number<br>
