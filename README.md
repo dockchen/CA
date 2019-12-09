@@ -16,7 +16,7 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
 
 2. argument of constructor of CA_util_class is a command line options (i.e. argparse, ref to "https://docs.python.org/zh-tw/3/library/argparse.html#module-argparse" for detail)<br>
     `-v version number`<br>
-        show version number
+        show version number<br>
     `-f filename`<br>
         specify file name of JSON file which store username, passsword and other key settings of CA users<br>
     `-10p` <br>
@@ -35,9 +35,10 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
     specify squad_number to perform actions<br>
 
 3. CA.py - main function of CA project. You can start automation by executing CA.py as below.<br>
+```
     python CA.py -DC -CD<br>
     python CA.py -g Fu -sqd 1 -sqd 2 -10p<br>
-
+```
 4. update "CA_accounts_full.json" and "target_id_list.json" before start<br>
     - CA_accounts_full.json
     This JSON file stores all CA account information for automation. mandatory fields needed should be,<br>
@@ -60,16 +61,11 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
     - target_id_list.json
     list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
     ```
-    [
-        {
-        "target_id": "19608101",
-        "max_bsi": 5332.0,
-        "min_bsi": 0
-        }
-    ]
+        [
+            {
+            "target_id": "19608101",
+            "max_bsi": 5332.0,
+            "min_bsi": 0
+            }
+        ]
     ```
-#### 多行文本
-##### 语法1
-    在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。
-    在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。
-    在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。
