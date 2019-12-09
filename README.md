@@ -19,19 +19,19 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
         show version number
     `-f filename`<br>
         specify file name of JSON file which store username, passsword and other key settings of CA users<br>
-    -10p <br>
+    `-10p` <br>
     collect 10p battle rewards<br>
-    -100p <br>
+    `-100p` <br>
     collect 100p battle rewards<br>
-    -CGB <br>
+    `-CGB` <br>
     collect Classical GB rewards<br>
-    -DC <br>
+    `-DC` <br>
     daily click. includes Enable, Bless, Resource, Crystal    <br>
-    -CD<br>
+    `-CD`<br>
     conquest duel. perform conquest duel based on "target_id_list.json"<br>
-    -g guildname<br>
+    `-g guildname`<br>
     specify guild name to perform actions<br>
-    -sqd squad_number<br>
+    `-sqd squad_number`<br>
     specify squad_number to perform actions<br>
 
 3. CA.py - main function of CA project. You can start automation by executing CA.py as below.<br>
@@ -41,31 +41,33 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
 4. update "CA_accounts_full.json" and "target_id_list.json" before start<br>
     - CA_accounts_full.json
     This JSON file stores all CA account information for automation. mandatory fields needed should be,<br>
-    NO: serial number<br>
-    Guild: Guild name<br>
-    Name: user name<br>
-    Email: CA login email<br>
-    PWD: CA login password<br>
-    Squad: squad of 10p battle<br>
-    Def_loadout: default loadout when all actions done<br>
-    Conquest_Duel: Perform conquest duel or not. 0: No, 1: Yes<br>
-    Collect_Conquest: Collect Conquest path rewards. 0: No, 1: Yes<br>
-    PvP_Loadout: PvP loadout, used when perform "conquest duel"<br>
-    DailyClick: Perform daily click or not. 0: No, 1: Yes<br>
-    Blessing: Perform bless or not. 0: No, 1: Yes<br>
-    Campaign: Specify Campaign type. will activate campaign when blessing.<br>
-    Reward_100P: Collect 100p rewards or not. 0: No, 1: Yes<br>
-    Reward_10P: Collect 10p rewards or not. 0: No, 1: Yes<br>
-    Reward_CGB: Collect classical Guild Battle rewards or not. 0: No, 1: Yes<br>
+    `NO`: serial number<br>
+    `Guild`: Guild name<br>
+    `Name`: user name<br>
+    `Email`: CA login email<br>
+    `PWD`: CA login password<br>
+    `Squad`: squad of 10p battle<br>
+    `Def_loadout`: default loadout when all actions done<br>
+    `Conquest_Duel`: Perform conquest duel or not. 0: No, 1: Yes<br>
+    `Collect_Conquest`: Collect Conquest path rewards. 0: No, 1: Yes<br>
+    `PvP_Loadout`: PvP loadout, used when perform "conquest duel"<br>
+    `DailyClick`: Perform daily click or not. 0: No, 1: Yes<br>
+    `Blessing`: Perform bless or not. 0: No, 1: Yes<br>
+    `Campaign`: Specify Campaign type. will activate campaign when blessing.<br>
+    `Reward_100P`: Collect 100p rewards or not. 0: No, 1: Yes<br>
+    `Reward_10P`: Collect 10p rewards or not. 0: No, 1: Yes<br>
+    `Reward_CGB`: Collect classical Guild Battle rewards or not. 0: No, 1: Yes<br>
     - target_id_list.json
     list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
-    [<br>
-        {<br>
-        "target_id": "19608101",<br>
-        "max_bsi": 5332.0,<br>
-        "min_bsi": 0<br>
-        }<br>
-    ]<br>
+    ```
+    [
+        {
+        "target_id": "19608101",
+        "max_bsi": 5332.0,
+        "min_bsi": 0
+        }
+    ]
+    ```
 #### 多行文本
 ##### 语法1
     在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。在连续几行的文本开头加入1个Tab或者4个空格。
