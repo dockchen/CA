@@ -95,12 +95,12 @@ Castle age home page
         optional arguments:
           -h, --help            show this help message and exit
           -v, --version         show program's version number and exit
-          -f FILENAME,          --filename FILENAME
+          -f FILENAME, --filename FILENAME
           -10p, --Reward_10P    Collect 10P battle reward
           -100p, --Reward_100P  Collect 100P battle reward
           -CGB, --Reward_CGB    Collect Classical GB reward
           -DC, --DailyClick     Daily clicks - Enable, Bless, Resource, Crystal...
-          -b {0,1,2,3,4,5},     --Blessing {0,1,2,3,4,5}
+          -b {0,1,2,3,4,5}, --Blessing {0,1,2,3,4,5}
                                 Blessing - 0: profile; 1:Eng; 2:Atk; 3:Def; 4:Health;
                                 5:STA
           -CD, --ConquestDuel   Auto Conquest Duel
