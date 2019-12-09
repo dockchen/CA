@@ -13,8 +13,7 @@ Castle age home page
     - Python: <https://www.python.org/downloads/>
     - GitHub: <https://github.com/dockchen/CA>
 2. Update "CA_accounts_full.json" before start<br>
-    - CA_accounts_full.json
-        This JSON file stores all CA account information for automation. mandatory fields needed should be,<br>
+    This JSON file stores all CA account information for automation. mandatory fields needed should be,<br>
         `NO`: serial number<br>
         `Guild`: Guild name<br>
         `Name`: user name<br>
@@ -71,21 +70,22 @@ Castle age home page
     ```
 3. Update "target_id_list.json" before start<br>
     target_id_list.json is a list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
-        ```
-            [
-                {
-                "target_id": "19608101",
-                "max_bsi": 5332.0,
-                "min_bsi": 0
-                }
-            ]
-        ```
+    ```
+    [
+        {
+        "target_id": "19608101",
+        "max_bsi": 5332.0,
+        "min_bsi": 0
+        }
+    ]
+    ```
 4. Start CA automation
     - CA.py: main function of CA project. You can start automation by executing CA.py as below.<br>
         ```
         python CA.py -DC -CD
         python CA.py -g Fu -sqd 1 -sqd 2 -10p
         ```
+        <BR>
         ```
         usage: ca.py [-h] [-v] [-f FILENAME] [-10p] [-100p] [-CGB] [-DC]
              [-b {0,1,2,3,4,5}] [-CD] [-g {Any,YoPing,Fu,Lu}]
