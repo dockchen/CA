@@ -80,7 +80,7 @@ Castle age home page
     ]
     ```
 4. Start CA automation<br>
-    `CA.py` is the main function of CA project. You can start CA automation by executing CA.py as below.<br>
+    `CA.py` is the main function of CA project. You can start CA automation by executing `CA.py` as below.<br>
     ```
     python CA.py -DC -CD
     python CA.py -g Fu -sqd 1 -sqd 2 -10p
@@ -109,7 +109,7 @@ Castle age home page
           -sqd {1,2,3,4,5,6,7,8,9,10}, --Squad {1,2,3,4,5,6,7,8,9,10}
                                 Specify squads to do actions
 5. Create your own function<br>
-    Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation<br>
+    Key features are bounded in `CA_util\CA_util_class`, initial a instance to start automation<br>
     for example: <br>
     ```
     from CA_util import CA_util_class
