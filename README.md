@@ -79,13 +79,13 @@ Castle age home page
         }
     ]
     ```
-4. Start CA automation
-    - CA.py: main function of CA project. You can start automation by executing CA.py as below.<br>
+4. Start CA automation<br>
+    `CA.py` is the main function of CA project. You can start CA automation by executing CA.py as below.<br>
     ```
     python CA.py -DC -CD
     python CA.py -g Fu -sqd 1 -sqd 2 -10p
     ```
-
+    ### Syntax as shown below:
         usage: ca.py [-h] [-v] [-f FILENAME] [-10p] [-100p] [-CGB] [-DC]
              [-b {0,1,2,3,4,5}] [-CD] [-g {Any,YoPing,Fu,Lu}]
              [-sqd {1,2,3,4,5,6,7,8,9,10}]
@@ -128,7 +128,7 @@ Castle age home page
         (optional) specify guild name to perform actions<br>
     `-sqd squad_number`<br>
         (optional) specify squad_number to perform actions<br>
-6. Create your own function
+6. Create your own function<br>
     Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation<br>
     for example: <br>
     ```
