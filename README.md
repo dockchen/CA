@@ -45,6 +45,17 @@ Castle age home page
     `-sqd squad_number`<br>
     specify squad_number to perform actions<br>
 5. update "CA_accounts_full.json" and "target_id_list.json" before start<br>
+    - target_id_list.json
+        list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
+        ```
+            [
+                {
+                "target_id": "19608101",
+                "max_bsi": 5332.0,
+                "min_bsi": 0
+                }
+            ]
+        ```
     - CA_accounts_full.json
         This JSON file stores all CA account information for automation. mandatory fields needed should be,<br>
         `NO`: serial number<br>
@@ -101,15 +112,4 @@ Castle age home page
             }
         ]
     ```
-    
-    - target_id_list.json
-        list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
-        ```
-            [
-                {
-                "target_id": "19608101",
-                "max_bsi": 5332.0,
-                "min_bsi": 0
-                }
-            ]
-        ```
+
