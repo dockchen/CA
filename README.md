@@ -1,17 +1,19 @@
-# CA - stands for "Castle Age", this is the python project for automation of CA.
+# CA - stands for "Castle Age"
+## This is the python project for automation of CA.
 ***
 |Author|DOCK CHEN|
 |:---|:---|
 |Email|dock.chen@gmail.com|
 ***
-Castle age - https://web3.castleagegame.com/castle_ws/index.php
+Castle age home page 
+- https://web3.castleagegame.com/castle_ws/index.php
 ***
 ### HOW TO START
 1. Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation
     for example: <br>
     ```
-    from CA_util import CA_util_class<br>
-    CA = CA_util_class.CA_instance(args)<br>
+    from CA_util import CA_util_class
+    CA = CA_util_class.CA_instance(args)
     ```
 
 2. argument of constructor of CA_util_class is a command line options (i.e. argparse, ref to "https://docs.python.org/zh-tw/3/library/argparse.html#module-argparse" for detail)<br>
