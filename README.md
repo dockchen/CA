@@ -9,14 +9,24 @@ Castle age home page
 - https://web3.castleagegame.com/castle_ws/index.php
 ***
 ### HOW TO START
-1. Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation
+1. Install Python and clone this git
+2. CA.py 
+    - main function of CA project. You can start automation by executing CA.py as below.<br>
+```
+    python CA.py -DC -CD
+    python CA.py -g Fu -sqd 1 -sqd 2 -10p
+```
+3. Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation
     for example: <br>
     ```
     from CA_util import CA_util_class
+    
     CA = CA_util_class.CA_instance(args)
+    CA.do_CA_actions()
+    del CA
     ```
 
-2. argument of constructor of CA_util_class is a command line options (i.e. argparse, ref to "https://docs.python.org/zh-tw/3/library/argparse.html#module-argparse" for detail)<br>
+4. argument of constructor of CA_util_class is a command line options (i.e. argparse, ref to "https://docs.python.org/zh-tw/3/library/argparse.html#module-argparse" for detail)<br>
     `-v version number`<br>
         show version number<br>
     `-f filename`<br>
@@ -36,12 +46,7 @@ Castle age home page
     `-sqd squad_number`<br>
     specify squad_number to perform actions<br>
 
-3. CA.py - main function of CA project. You can start automation by executing CA.py as below.<br>
-```
-    python CA.py -DC -CD<br>
-    python CA.py -g Fu -sqd 1 -sqd 2 -10p<br>
-```
-4. update "CA_accounts_full.json" and "target_id_list.json" before start<br>
+5. update "CA_accounts_full.json" and "target_id_list.json" before start<br>
     - CA_accounts_full.json
     This JSON file stores all CA account information for automation. mandatory fields needed should be,<br>
     `NO`: serial number<br>
