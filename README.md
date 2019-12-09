@@ -30,7 +30,7 @@ Castle age home page
         `Reward_100P`: Collect 100p rewards or not. 0: No, 1: Yes<br>
         `Reward_10P`: Collect 10p rewards or not. 0: No, 1: Yes<br>
         `Reward_CGB`: Collect classical Guild Battle rewards or not. 0: No, 1: Yes<br>
-        ```
+        
         [
             {
                 "NO": 63,
@@ -67,7 +67,7 @@ Castle age home page
                 "Owner": null
             }
         ]
-        ```
+
 3. Update "target_id_list.json" before start<br>
     target_id_list.json is a list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
     ```
@@ -110,7 +110,7 @@ Castle age home page
           -sqd {1,2,3,4,5,6,7,8,9,10}, --Squad {1,2,3,4,5,6,7,8,9,10}
                                 Specify squads to do actions
         ```
-5. Arguments available for CA.py
+5. Arguments available for CA.py<br>
     `-v`<br>
         show version number<br>
     `-f filename`<br>
