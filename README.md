@@ -9,15 +9,15 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
 ### HOW TO START
 1. Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation
     for example: <br>
-'''
+    ```
     from CA_util import CA_util_class<br>
     CA = CA_util_class.CA_instance(args)<br>
-'''
+    ```
 
 2. argument of constructor of CA_util_class is a command line options (i.e. argparse, ref to "https://docs.python.org/zh-tw/3/library/argparse.html#module-argparse" for detail)<br>
-'-v version number'<br>
+    `-v version number`<br>
         show version number
-'-f filename'<br>
+    `-f filename`<br>
         specify file name of JSON file which store username, passsword and other key settings of CA users<br>
     -10p <br>
     collect 10p battle rewards<br>
