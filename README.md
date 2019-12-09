@@ -12,10 +12,10 @@ Castle age home page
 1. Install Python and clone this git
 2. CA.py 
     - main function of CA project. You can start automation by executing CA.py as below.<br>
-```
+    ```
     python CA.py -DC -CD
     python CA.py -g Fu -sqd 1 -sqd 2 -10p
-```
+    ```
 3. Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation
     for example: <br>
     ```
