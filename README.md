@@ -29,7 +29,7 @@ Castle age - https://web3.castleagegame.com/castle_ws/index.php
     -g guildname<br>
     specify guild name to perform actions<br>
     -sqd squad_number<br>
-    specify squad_number to perform actions'test 123'<br>
+    specify squad_number to perform actions<br>
 
 3. CA.py - main function of CA project. You can start automation by executing CA.py as below.<br>
     python CA.py -DC -CD<br>
