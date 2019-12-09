@@ -101,6 +101,7 @@ Castle age home page
             }
         ]
     ```
+    <br>
     - target_id_list.json
         list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
         ```
