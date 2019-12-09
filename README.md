@@ -11,7 +11,7 @@ Castle age home page
 ### HOW TO START
 1. Install Python and clone this git
 2. CA.py 
-    - main function of CA project. You can start automation by executing CA.py as below.<br>
+    main function of CA project. You can start automation by executing CA.py as below.<br>
         ```
         python CA.py -DC -CD
         python CA.py -g Fu -sqd 1 -sqd 2 -10p
@@ -44,7 +44,7 @@ Castle age home page
     specify guild name to perform actions<br>
     `-sqd squad_number`<br>
     specify squad_number to perform actions<br>
-5. update "CA_accounts_full.json" and "target_id_list.json" before start<br>
+5. Update "CA_accounts_full.json" before start<br>
     - CA_accounts_full.json
         This JSON file stores all CA account information for automation. mandatory fields needed should be,<br>
         `NO`: serial number<br>
@@ -101,9 +101,8 @@ Castle age home page
             }
         ]
     ```
-    <br>
-    - target_id_list.json
-        list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
+6. Update "target_id_list.json" before start<br>
+    target_id_list.json is a list of conquest duel target id as format shown below, conquest duel will choose one target in the list randomly.<br>
         ```
             [
                 {
