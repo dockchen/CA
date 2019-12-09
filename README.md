@@ -85,7 +85,7 @@ Castle age home page
     python CA.py -DC -CD
     python CA.py -g Fu -sqd 1 -sqd 2 -10p
     ```
-        <BR>
+
         ```
         usage: ca.py [-h] [-v] [-f FILENAME] [-10p] [-100p] [-CGB] [-DC]
              [-b {0,1,2,3,4,5}] [-CD] [-g {Any,YoPing,Fu,Lu}]
@@ -133,10 +133,10 @@ Castle age home page
 6. Create your own function
     Key features are bounded in 'CA_util\CA_util_class', initial a instance to start automation<br>
     for example: <br>
-        ```
-        from CA_util import CA_util_class
+    ```
+    from CA_util import CA_util_class
 
-        CA = CA_util_class.CA_instance(args)
-        CA.do_CA_actions()
-        del CA
-        ```
+    CA = CA_util_class.CA_instance(args)
+    CA.do_CA_actions()
+    del CA
+    ```
