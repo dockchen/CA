@@ -737,6 +737,9 @@ class CA_instance:
                     if ((target_id_list[idx]['max_bsi'] > user_prop['BSI']) or
                         (target_id_list[idx]['max_bsi'] == 0)):
                         target_id_list[idx]['max_bsi'] = user_prop['BSI'] - 1
+                        if ((target_id_list[idx]['max_bsi']) < (target_id_list[idx]['min_bsi'])):
+                            target_id_list[idx]['min_bsi'] = target_id_list[idx]['max_bsi'] - 1
+
                 # if too weak... find 'weak' and heal self
                 else:
                     weak = q.get_attribute('style').find('weak')
@@ -748,6 +751,8 @@ class CA_instance:
                         if ((target_id_list[idx]['min_bsi'] < user_prop['BSI']) or
                             (target_id_list[idx]['min_bsi'] == 0)):
                             target_id_list[idx]['min_bsi'] = user_prop['BSI'] + 1
+                            if ((target_id_list[idx]['min_bsi']) > (target_id_list[idx]['max_bsi'])):
+                                target_id_list[idx]['max_bsi'] = target_id_list[idx]['min_bsi'] + 1
 
                         def_count = def_count + 1
                         idx = random.randint(0,id_len-1)
@@ -755,8 +760,8 @@ class CA_instance:
                 #print('Hit #{} [Dead!] - {}'.format(i, target_id))
                 idx = random.randint(0,id_len-1)
                 continue
-            if ((target_id_list[idx]['min_bsi']) > (target_id_list[idx]['max_bsi'])):
-                target_id_list[idx]['min_bsi'] = target_id_list[idx]['max_bsi'] - 1
+            #if ((target_id_list[idx]['min_bsi']) > (target_id_list[idx]['max_bsi'])):
+            #    target_id_list[idx]['min_bsi'] = target_id_list[idx]['max_bsi'] - 1
 
         log.info('OK - Conquest Duel - Victory: {}; Defeat: {}'.format(vic_count, def_count))
         return target_id_list
