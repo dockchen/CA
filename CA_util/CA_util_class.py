@@ -66,7 +66,7 @@ class CA_instance:
     #        }
     
     # Properties with default value
-    chrome_path = ".\WebDriver\chromedriver.exe" #chromedriver.exe執行檔所存在的路徑
+    chrome_path = r".\WebDriver\chromedriver.exe" #chromedriver.exe執行檔所存在的路徑
        
     implicitly_wait_time = 3
     max_wait_time = 5
@@ -695,8 +695,20 @@ class CA_instance:
         # Conquest duel with assigned list
         while (token > 0):
             i = i + 1
-            #for i in range(token):    
-            target_id = target_id_list[idx]['target_id']
+            #for i in range(token):
+            target_prop = target_id_list[idx]
+            
+            # check bsi
+            if (user_prop["BSI"] < target_prop["max_bsi"]):
+                new_idx = idx
+                
+                while ((user_prop["BSI"] < target_prop["max_bsi"]) and (new_idx != idx - 1)):
+                    new_idx = (new_idx + 1) % len(target_id_list)
+                    target_prop = target_id_list[new_idx]
+            
+
+            target_id = target_prop['target_id']
+            
             #idx = (idx + 1) % len(target_id_list)
             url = "https://web3.castleagegame.com/castle_ws/conquest_duel.php?target_id={}&action=battle&duel=true&bqh={}&ajax=1&ajax=1".format(target_id, self.bqh)
             #print('[{}] Hit #{} - {}'.format(user_prop['Name'], i, target_id))
