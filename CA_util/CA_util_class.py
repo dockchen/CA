@@ -703,6 +703,7 @@ class CA_instance:
                 new_idx = idx
                 
                 while ((user_prop["BSI"] < target_prop["max_bsi"]) and (new_idx != idx - 1)):
+                    print(f"my bsi {user_prop['BSI']}, target info {target_prop}")
                     new_idx = (new_idx + 1) % len(target_id_list)
                     target_prop = target_id_list[new_idx]
             
@@ -754,6 +755,9 @@ class CA_instance:
                 #print('Hit #{} [Dead!] - {}'.format(i, target_id))
                 idx = random.randint(0,id_len-1)
                 continue
+            if ((target_id_list[idx]['min_bsi']) > (target_id_list[idx]['max_bsi'])):
+                target_id_list[idx]['min_bsi'] = target_id_list[idx]['max_bsi'] - 1
+
         log.info('OK - Conquest Duel - Victory: {}; Defeat: {}'.format(vic_count, def_count))
         return target_id_list
 
